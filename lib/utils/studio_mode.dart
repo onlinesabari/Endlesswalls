@@ -1,0 +1,1 @@
+enum StudioMode { wave, geometry, aura, crystal, liquid, emoji, vector }
