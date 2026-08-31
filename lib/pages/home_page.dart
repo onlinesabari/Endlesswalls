@@ -6,6 +6,9 @@ import 'geometry_studio.dart';
 import 'aura_studio.dart'; 
 import 'crystal_studio.dart';
 import 'face_studio.dart';
+import 'flow_studio.dart';
+import 'quote_studio.dart';
+import 'nature_studio.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -136,6 +139,36 @@ class HomeScreen extends StatelessWidget {
               Icons.waves, 
               const Color(0xFFFFD700), 
               const WaveStudio()
+            ),
+
+            // 9. Flow Studio
+            _buildStudioCard(
+              context, 
+              "Flow Studio", 
+              "Swirling vector fields and fluid particles", 
+              Icons.air, 
+              const Color(0xFF00C9FF), 
+              const FlowStudio()
+            ),
+
+            // 10. Typography Studio
+            _buildStudioCard(
+              context, 
+              "Typography Studio", 
+              "Matrix rain and scattered quotes", 
+              Icons.text_fields, 
+              const Color(0xFFE94057), 
+              const QuoteStudio()
+            ),
+
+            // 11. Nature Studio
+            _buildStudioCard(
+              context, 
+              "Nature Studio", 
+              "Procedural trees, vines, and organic forms", 
+              Icons.eco, 
+              Colors.green, 
+              const NatureStudio()
             ),
             
             const SizedBox(height: 40), // Bottom padding for smooth scrolling
